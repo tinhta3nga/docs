@@ -5,7 +5,7 @@
   "logo": {
     "light": "/logo/light.png",
     "dark": "/logo/dark.svg",
-    "height": 500
+    "height": 2500
   },
   "favicon": "/logo/favicon.png",
   "colors": {
