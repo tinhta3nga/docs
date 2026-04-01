@@ -4,8 +4,8 @@
   "name": "DIPNet – Hướng dẫn sử dụng",
   "logo": {
     "light": "/logo/light.png",
-    "dark": "/logo/dark.svg",
-    "height": 2500
+    "dark": "/logo/logo-darkmode.png",
+    "height": 70
   },
   "favicon": "/logo/favicon.png",
   "colors": {
