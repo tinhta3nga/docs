@@ -1,0 +1,90 @@
+---
+title: "Quy trình uỷ quyền khai thác"
+description: "Ký hợp đồng uỷ quyền số để cho phép DipNET khai thác tác phẩm thay mặt bạn"
+---
+
+## Hai luồng uỷ quyền
+
+DIPNet hỗ trợ hai hình thức uỷ quyền khác nhau:
+
+<CardGroup cols={2}>
+  <Card title="Uỷ quyền khai thác" icon="handshake">
+    Uỷ quyền cho DipNET khai thác thương mại tác phẩm. **Không cần thanh toán phí**, chỉ cần ký hợp đồng số.
+  </Card>
+  <Card title="Uỷ quyền đăng ký công bố" icon="shield-check">
+    Uỷ quyền cho DipNET thực hiện đăng ký bảo hộ bản quyền. Cần ký hợp đồng và **thanh toán phí** đăng ký.
+  </Card>
+</CardGroup>
+
+---
+
+## Quy trình uỷ quyền khai thác
+
+<Steps>
+  <Step title="Mở trang uỷ quyền">
+    Vào trang chi tiết tác phẩm và nhấn thẻ **"Uỷ quyền"**, hoặc truy cập `dipnet.vn/authorization/[productId]`.
+  </Step>
+  <Step title="Chọn phạm vi khai thác">
+    Xác định các quyền khai thác bạn muốn uỷ quyền cho DipNET:
+    - Phát sóng, phân phối
+    - Cấp phép cho bên thứ ba
+    - Khai thác thương mại
+    - Phạm vi địa lý và thời gian
+  </Step>
+  <Step title="Xem và ký hợp đồng số">
+    Hệ thống tự động tạo **hợp đồng uỷ quyền dạng PDF** dựa trên phạm vi đã chọn.
+
+    Bạn có thể ký hợp đồng theo hai cách:
+    - **VNPT SmartCA** – Chữ ký số pháp lý, được công nhận bởi pháp luật Việt Nam
+    - **Chữ ký mặc định** – Chữ ký điện tử đơn giản (dành cho mục đích nội bộ)
+
+    <Note>
+      Chữ ký số VNPT SmartCA có giá trị pháp lý cao nhất, được khuyến nghị cho các hợp đồng quan trọng.
+    </Note>
+  </Step>
+  <Step title="Xác nhận uỷ quyền">
+    Sau khi ký, nhấn **"Xác nhận"**. Hệ thống:
+    - Đánh dấu tác phẩm là **đã uỷ quyền** (`is_authorized = true`)
+    - Tạo milestone "Uỷ quyền khai thác" trong lịch sử tác phẩm
+    - Lưu hợp đồng vào danh sách tài liệu của bạn
+  </Step>
+</Steps>
+
+---
+
+## Ký hợp đồng bằng VNPT SmartCA
+
+**VNPT SmartCA** là dịch vụ chữ ký số của VNPT, được pháp luật Việt Nam công nhận có giá trị tương đương chữ ký tay.
+
+Để sử dụng VNPT SmartCA trên DIPNet:
+1. Bạn cần có tài khoản VNPT SmartCA (đăng ký tại vnpt-ca.vn)
+2. Vào `dipnet.vn/authorization`, chọn **"Ký bằng VNPT SmartCA"**
+3. Xác thực và ký hợp đồng qua ứng dụng SmartCA trên điện thoại
+
+---
+
+## Xem hợp đồng đã ký
+
+Tất cả hợp đồng uỷ quyền đã ký lưu tại `dipnet.vn/profile/contract`. Bạn có thể:
+- Xem danh sách hợp đồng
+- Tải xuống bản PDF
+- Kiểm tra trạng thái hợp đồng
+
+---
+
+## Câu hỏi thường gặp
+
+<AccordionGroup>
+  <Accordion title="Uỷ quyền có nghĩa là tôi mất quyền sở hữu tác phẩm không?">
+    Không. Uỷ quyền khai thác **không chuyển quyền sở hữu**. Bạn vẫn là chủ sở hữu tác phẩm; DipNET chỉ được phép khai thác trong phạm vi được uỷ quyền.
+  </Accordion>
+  <Accordion title="Tôi có thể thu hồi uỷ quyền không?">
+    Khả năng thu hồi uỷ quyền phụ thuộc vào điều khoản hợp đồng đã ký. Liên hệ support@dipnet.vn để được tư vấn.
+  </Accordion>
+  <Accordion title="Chữ ký số VNPT SmartCA có bắt buộc không?">
+    Không bắt buộc, nhưng được khuyến nghị vì có giá trị pháp lý cao hơn. Bạn có thể dùng chữ ký mặc định cho các uỷ quyền nội bộ.
+  </Accordion>
+  <Accordion title="Tác phẩm đã uỷ quyền có thể bán không?">
+    Có. Uỷ quyền khai thác và bán nhượng quyền là hai tính năng độc lập. Bạn vẫn có thể đăng bán tác phẩm trên thị trường dù đã uỷ quyền.
+  </Accordion>
+</AccordionGroup>

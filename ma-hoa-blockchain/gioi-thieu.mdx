@@ -1,0 +1,80 @@
+---
+title: "Giới thiệu mã hóa & Blockchain"
+description: "Số hóa tác phẩm lên blockchain để chứng minh quyền sở hữu vĩnh viễn"
+---
+
+## Mã hóa tác phẩm là gì?
+
+**Mã hóa tác phẩm** (Encoding/Digitization) là quá trình số hóa và đăng ký tác phẩm của bạn lên mạng lưới **blockchain Ethereum** dưới dạng **NFT (Non-Fungible Token)**. Đây là bằng chứng kỹ thuật số không thể giả mạo về quyền sở hữu tác phẩm.
+
+---
+
+## Tại sao nên mã hóa tác phẩm?
+
+<CardGroup cols={2}>
+  <Card title="Bằng chứng vĩnh viễn" icon="infinity">
+    Thông tin tác phẩm được lưu trữ trên blockchain – không thể sửa đổi, xóa hay làm giả. Quyền sở hữu được chứng minh mãi mãi.
+  </Card>
+  <Card title="NFT đại diện quyền sở hữu" icon="hexagon-image">
+    Tác phẩm được đúc thành NFT với đầy đủ thông tin tác giả, người đồng sở hữu và metadata. NFT có thể chuyển nhượng khi mua bán.
+  </Card>
+  <Card title="Minh bạch tuyệt đối" icon="eye">
+    Bất kỳ ai cũng có thể tra cứu lịch sử quyền sở hữu trên blockchain – đảm bảo tính minh bạch trong giao dịch.
+  </Card>
+  <Card title="Chuyển nhượng thông minh" icon="arrow-right-arrow-left">
+    Khi tác phẩm được mua bán, NFT tự động chuyển đến ví của người mua – đảm bảo quyền sở hữu hợp pháp.
+  </Card>
+</CardGroup>
+
+---
+
+## Công nghệ sử dụng
+
+DIPNet sử dụng:
+
+| Công nghệ | Chi tiết |
+|-----------|----------|
+| **Blockchain** | Ethereum (EVM-compatible) |
+| **Smart Contract** | IP Manager Contract – quản lý quyền sở hữu trí tuệ |
+| **NFT Standard** | ERC-721 (Non-Fungible Token) |
+| **Metadata Storage** | Amazon S3 (công khai) |
+| **Token URI** | URL dẫn đến metadata JSON chuẩn NFT |
+
+---
+
+## Thông tin được lưu trên blockchain
+
+Khi tác phẩm được mã hóa thành công, các thông tin sau được lưu vĩnh viễn:
+
+- **Tên tác phẩm** (contractName)
+- **Số định danh** (ipCode / Registration Number)
+- **Danh sách người tham gia**: tên, CCCD, địa chỉ ví EVM, vai trò
+- **Token URI**: link đến metadata JSON (tên, mô tả, ảnh, danh mục, ngày đăng ký, v.v.)
+- **Token ID**: mã định danh duy nhất trên blockchain
+- **Transaction Hash**: mã giao dịch blockchain có thể tra cứu
+
+---
+
+## Điều kiện để mã hóa
+
+<Warning>
+  Tác phẩm phải đáp ứng **tất cả** điều kiện sau mới có thể mã hóa:
+</Warning>
+
+1. **Đăng ký công bố đã được duyệt** (`copyright_status = approved`)
+2. **Chưa được mã hóa** (chưa ở trạng thái `encoding` hoặc `encoded`)
+3. **Tác phẩm gốc** (không phải tác phẩm phái sinh)
+4. **Người tham gia có ví EVM** – tất cả người tham gia có tài khoản DIPNet cần liên kết ví điện tử EVM
+
+---
+
+## Liên kết nhanh
+
+<CardGroup cols={2}>
+  <Card title="Điều kiện & Quy trình" icon="list-check" href="/ma-hoa-blockchain/dieu-kien-va-quy-trinh">
+    Hướng dẫn từng bước thực hiện mã hóa tác phẩm.
+  </Card>
+  <Card title="Kết quả & NFT" icon="hexagon-image" href="/ma-hoa-blockchain/ket-qua-va-nft">
+    Xem kết quả mã hóa và tra cứu NFT trên blockchain.
+  </Card>
+</CardGroup>

@@ -1,0 +1,73 @@
+---
+title: "Theo dõi trạng thái đăng ký"
+description: "Kiểm tra và theo dõi tình trạng xét duyệt đơn đăng ký công bố"
+---
+
+## Xem trạng thái đơn đăng ký
+
+Bạn có thể theo dõi trạng thái đơn đăng ký công bố qua nhiều cách:
+
+### 1. Trang quản lý tác phẩm
+
+Tại `dipnet.vn/management-studio/original`, mỗi tác phẩm hiển thị badge trạng thái đăng ký công bố:
+
+| Badge | Trạng thái | Ý nghĩa |
+|-------|------------|---------|
+| ⚪ Chưa đăng ký | `none` | Chưa nộp đơn |
+| 🟡 Đã đăng ký | `applied` | Đơn đã nộp, đang chờ duyệt |
+| 🟢 Đã duyệt | `approved` | Được cấp chứng nhận bảo hộ |
+| 🔴 Bị từ chối | `rejected` | Đơn bị từ chối |
+| 🟠 Chờ thanh toán | `pending_payment` | Cần hoàn tất thanh toán |
+| 🔵 Chờ thông tin | `pending_participants` | Cần bổ sung thông tin |
+
+### 2. Trang chi tiết đơn đăng ký
+
+Vào `dipnet.vn/copyright/[id]` để xem chi tiết:
+- Thời gian nộp đơn
+- Thông tin thanh toán
+- Ghi chú từ admin (nếu có)
+- Lý do từ chối (nếu bị từ chối)
+
+### 3. Thông báo email
+
+DIPNet sẽ gửi email thông báo khi:
+- Thanh toán thành công (xác nhận đã nhận đơn)
+- Admin duyệt đơn (kèm thông tin chứng nhận)
+- Admin từ chối đơn (kèm lý do)
+
+---
+
+## Thời gian xét duyệt
+
+| Loại | Thời gian dự kiến |
+|------|------------------|
+| Xét duyệt thông thường | 1–5 ngày làm việc |
+| Xét duyệt ưu tiên (nếu có) | 1 ngày làm việc |
+
+Thời gian có thể kéo dài hơn trong các dịp lễ hoặc khi số lượng đơn cao.
+
+---
+
+## Nếu đơn bị từ chối
+
+<Steps>
+  <Step title="Đọc lý do từ chối">
+    Xem lý do từ chối trong email hoặc trang chi tiết đơn. Các lý do phổ biến:
+    - Thông tin tác phẩm không đầy đủ hoặc không chính xác
+    - File tác phẩm không đáp ứng yêu cầu
+    - Tác phẩm vi phạm quyền sở hữu của bên khác
+    - Thông tin người tham gia không hợp lệ
+  </Step>
+  <Step title="Khắc phục vấn đề">
+    Chỉnh sửa thông tin tác phẩm tại `dipnet.vn/work/[id]/edit` để giải quyết vấn đề.
+  </Step>
+  <Step title="Nộp đơn lại">
+    Sau khi khắc phục, nhấn lại thẻ **"Đăng ký công bố"** và hoàn tất thanh toán mới.
+  </Step>
+</Steps>
+
+---
+
+<Tip>
+  Để tăng tỷ lệ được duyệt lần đầu, hãy đảm bảo tác phẩm có **đầy đủ thông tin**, ảnh bìa chất lượng tốt, và thông tin người tham gia chính xác trước khi nộp đơn.
+</Tip>

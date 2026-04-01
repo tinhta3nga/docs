@@ -1,0 +1,108 @@
+---
+title: "Quy trình và phí đăng ký công bố"
+description: "Hướng dẫn chi tiết từng bước đăng ký bảo hộ bản quyền trên DIPNet"
+---
+
+## Trước khi bắt đầu
+
+<CheckList>
+  - Tài khoản đã xác minh KYC
+  - Đã tạo tác phẩm gốc với đầy đủ thông tin
+  - Chuẩn bị phương thức thanh toán (thẻ ngân hàng/VNPay)
+</CheckList>
+
+---
+
+## Quy trình đăng ký
+
+<Steps>
+  <Step title="Mở trang chi tiết tác phẩm">
+    Vào `dipnet.vn/management-studio` → chọn tác phẩm cần đăng ký → xem trang chi tiết.
+
+    Hoặc truy cập trực tiếp `dipnet.vn/work/[id]`.
+  </Step>
+  <Step title="Nhấn thẻ "Đăng ký công bố"">
+    Trong trang chi tiết tác phẩm, nhấn thẻ **"Đăng ký công bố"** (Shield icon).
+
+    Bạn sẽ được chuyển đến trang `dipnet.vn/copyright/[id]`.
+  </Step>
+  <Step title="Xem thông tin và phí">
+    Trang đăng ký công bố hiển thị:
+    - Thông tin tác phẩm (tên, danh mục, số định danh)
+    - **Phí đăng ký công bố** theo danh mục tác phẩm
+    - Tùy chọn **Bản cứng** (Hard Copy) nếu muốn nhận chứng nhận vật lý (có phí thêm)
+    - Tùy chọn áp dụng **Mã giảm giá** (nếu có)
+  </Step>
+  <Step title="Chọn tùy chọn và thanh toán">
+    Chọn các tùy chọn mong muốn và nhấn **"Thanh toán"**. Hệ thống sẽ chuyển bạn đến cổng thanh toán **VNPay**.
+
+    Các phương thức thanh toán được hỗ trợ qua VNPay:
+    - Thẻ ATM nội địa
+    - Thẻ tín dụng/ghi nợ quốc tế (Visa, Mastercard)
+    - Chuyển khoản ngân hàng
+    - Ví điện tử (MoMo, ZaloPay, v.v.)
+  </Step>
+  <Step title="Hoàn tất thanh toán">
+    Hoàn tất thanh toán trên cổng VNPay. Sau khi thanh toán thành công:
+    - Tác phẩm chuyển sang trạng thái **"Đã đăng ký"** (đang chờ duyệt)
+    - Bạn nhận email xác nhận thanh toán
+    - Hệ thống tạo đơn đăng ký để admin xét duyệt
+  </Step>
+  <Step title="Chờ xét duyệt">
+    Admin DIPNet sẽ xem xét hồ sơ trong vòng **1–5 ngày làm việc**. Bạn sẽ nhận thông báo qua email khi có kết quả.
+  </Step>
+</Steps>
+
+---
+
+## Kết quả xét duyệt
+
+### Được duyệt ✅
+
+Khi đơn được duyệt:
+- Tác phẩm chuyển sang trạng thái **"Đã duyệt"** (`copyright_status = approved`)
+- Bạn nhận email thông báo kèm thông tin chứng nhận
+- **Số định danh** được xác nhận chính thức
+- Bạn có thể tiếp tục **mã hóa blockchain** hoặc **đăng bán** tác phẩm
+
+### Bị từ chối ❌
+
+Khi đơn bị từ chối:
+- Tác phẩm trở về trạng thái **"Bị từ chối"**
+- Email thông báo kèm **lý do từ chối**
+- Bạn có thể **nộp lại đơn** sau khi khắc phục vấn đề (cần thanh toán phí lại)
+
+---
+
+## Bảng phí đăng ký công bố
+
+Phí được tính theo danh mục tác phẩm. Xem bảng phí đầy đủ tại [Bảng phí DIPNet](/ho-tro/bang-phi).
+
+<Note>
+  Phí thanh toán qua VNPay sẽ xuất hiện trong **Lịch sử thanh toán** tại `dipnet.vn/profile/payment-history`. Hóa đơn điện tử có thể tải tại `dipnet.vn/profile/receipts`.
+</Note>
+
+---
+
+## Mã giảm giá
+
+Nếu bạn có mã giảm giá, nhập vào ô **"Mã khuyến mãi"** trên trang thanh toán trước khi nhấn "Thanh toán". Mã giảm giá có thể được phát hành qua các chương trình marketing của DIPNet.
+
+---
+
+## Câu hỏi thường gặp
+
+<AccordionGroup>
+  <Accordion title="Phí đăng ký có được hoàn trả nếu đơn bị từ chối không?">
+    Phí đăng ký công bố **không được hoàn trả** trong trường hợp đơn bị từ chối. Hãy đảm bảo thông tin tác phẩm đầy đủ và chính xác trước khi nộp.
+  </Accordion>
+  <Accordion title="Tôi có thể nộp đơn lại sau khi bị từ chối không?">
+    Có. Sau khi đơn bị từ chối, bạn có thể chỉnh sửa thông tin tác phẩm và nộp lại. Mỗi lần nộp sẽ tính phí mới.
+  </Accordion>
+  <Accordion title="Tôi có thể theo dõi tiến độ xét duyệt ở đâu?">
+    Vào trang chi tiết tác phẩm hoặc `dipnet.vn/copyright` để xem trạng thái đơn. Bạn cũng sẽ nhận thông báo qua email khi có cập nhật.
+  </Accordion>
+  <Accordion title="Thanh toán thành công nhưng trạng thái chưa cập nhật?">
+    Đôi khi cần vài phút để hệ thống xử lý. Nếu sau 30 phút vẫn chưa cập nhật, hãy liên hệ hỗ trợ và cung cấp mã giao dịch VNPay.
+  </Accordion>
+</AccordionGroup>

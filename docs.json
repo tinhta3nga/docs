@@ -1,122 +1,134 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "Mint Starter Kit",
-  "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
-  },
-  "favicon": "/favicon.svg",
-  "navigation": {
-    "tabs": [
-      {
-        "tab": "Guides",
-        "groups": [
-          {
-            "group": "Getting started",
-            "pages": [
-              "index",
-              "quickstart",
-              "development"
-            ]
-          },
-          {
-            "group": "Customization",
-            "pages": [
-              "essentials/settings",
-              "essentials/navigation"
-            ]
-          },
-          {
-            "group": "Writing content",
-            "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/reusable-snippets"
-            ]
-          },
-          {
-            "group": "AI tools",
-            "pages": [
-              "ai-tools/cursor",
-              "ai-tools/claude-code",
-              "ai-tools/windsurf"
-            ]
-          }
-        ]
-      },
-      {
-        "tab": "API reference",
-        "groups": [
-          {
-            "group": "API documentation",
-            "pages": [
-              "api-reference/introduction"
-            ]
-          },
-          {
-            "group": "Endpoint examples",
-            "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete",
-              "api-reference/endpoint/webhook"
-            ]
-          }
-        ]
-      }
-    ],
-    "global": {
-      "anchors": [
-        {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
-        },
-        {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
-        }
-      ]
-    }
-  },
+  "name": "DIPNet – Hướng dẫn sử dụng",
   "logo": {
     "light": "/logo/light.svg",
     "dark": "/logo/dark.svg"
   },
-  "navbar": {
-    "links": [
-      {
-        "label": "Support",
-        "href": "mailto:hi@mintlify.com"
-      }
-    ],
-    "primary": {
-      "type": "button",
-      "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
+  "favicon": "/favicon.svg",
+  "colors": {
+    "primary": "#0057FF",
+    "light": "#3381FF",
+    "dark": "#003FCC",
+    "anchors": {
+      "from": "#0057FF",
+      "to": "#3381FF"
     }
   },
-  "contextual": {
-    "options": [
-     "copy",
-     "view",
-     "chatgpt",
-     "claude",
-     "perplexity",
-     "mcp",
-     "cursor",
-     "vscode"
-   ]
+  "topbarLinks": [
+    {
+      "name": "Truy cập DIPNet",
+      "url": "https://dipnet.vn"
+    }
+  ],
+  "topbarCtaButton": {
+    "name": "Đăng ký ngay",
+    "url": "https://dipnet.vn/register"
+  },
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Hướng dẫn người dùng",
+        "groups": [
+          {
+            "group": "Tổng quan",
+            "pages": [
+              "introduction",
+              "bat-dau/dang-ky-tai-khoan",
+              "bat-dau/dang-nhap",
+              "bat-dau/xac-minh-danh-tinh-kyc",
+              "bat-dau/thiet-lap-ho-so"
+            ]
+          },
+          {
+            "group": "Tác phẩm",
+            "pages": [
+              "tac-pham/tao-tac-pham-goc",
+              "tac-pham/quan-ly-tac-pham",
+              "tac-pham/tac-pham-phai-sinh"
+            ]
+          },
+          {
+            "group": "Đăng ký công bố",
+            "pages": [
+              "dang-ky-cong-bo/gioi-thieu",
+              "dang-ky-cong-bo/quy-trinh-va-phi",
+              "dang-ky-cong-bo/theo-doi-trang-thai"
+            ]
+          },
+          {
+            "group": "Mã hóa & Blockchain",
+            "pages": [
+              "ma-hoa-blockchain/gioi-thieu",
+              "ma-hoa-blockchain/dieu-kien-va-quy-trinh",
+              "ma-hoa-blockchain/ket-qua-va-nft"
+            ]
+          },
+          {
+            "group": "Uỷ quyền",
+            "pages": [
+              "uy-quyen/gioi-thieu-uy-quyen",
+              "uy-quyen/quy-trinh-uy-quyen"
+            ]
+          },
+          {
+            "group": "Mua bán & Chuyển nhượng",
+            "pages": [
+              "mua-ban/thi-truong-tac-pham",
+              "mua-ban/dang-ban-tac-pham",
+              "mua-ban/mua-nhuong-quyen",
+              "mua-ban/tac-pham-phai-sinh-thi-truong",
+              "mua-ban/dau-gia",
+              "mua-ban/dinh-gia-tac-pham"
+            ]
+          },
+          {
+            "group": "Gói dịch vụ",
+            "pages": [
+              "goi-dich-vu/tong-quan-goi",
+              "goi-dich-vu/goi-thanh-vien",
+              "goi-dich-vu/goi-dung-luong",
+              "goi-dich-vu/goi-tu-van-phap-ly",
+              "goi-dich-vu/huong-dan-thanh-toan"
+            ]
+          },
+          {
+            "group": "Quét vi phạm bản quyền",
+            "pages": [
+              "quet-vi-pham/gioi-thieu-quet",
+              "quet-vi-pham/tao-quet-moi",
+              "quet-vi-pham/xem-bao-cao",
+              "quet-vi-pham/mua-them-luot-quet"
+            ]
+          },
+          {
+            "group": "Tài khoản",
+            "pages": [
+              "tai-khoan/ho-so-ca-nhan",
+              "tai-khoan/tai-khoan-ngan-hang",
+              "tai-khoan/dung-luong-luu-tru",
+              "tai-khoan/lich-su-giao-dich",
+              "tai-khoan/hoa-don-va-bien-lai",
+              "tai-khoan/thong-bao",
+              "tai-khoan/chuong-trinh-affiliate"
+            ]
+          },
+          {
+            "group": "Hỗ trợ",
+            "pages": [
+              "ho-tro/bang-phi",
+              "ho-tro/cau-hoi-thuong-gap",
+              "ho-tro/lien-he"
+            ]
+          }
+        ]
+      }
+    ]
   },
   "footer": {
     "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
+      "website": "https://dipnet.vn"
     }
   }
 }

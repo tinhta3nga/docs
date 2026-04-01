@@ -1,0 +1,102 @@
+---
+title: "Hướng dẫn thanh toán"
+description: "Các phương thức thanh toán được hỗ trợ trên DIPNet"
+---
+
+## Cổng thanh toán VNPay
+
+DIPNet sử dụng **VNPay** – cổng thanh toán điện tử hàng đầu Việt Nam – để xử lý tất cả giao dịch.
+
+---
+
+## Phương thức thanh toán được hỗ trợ
+
+<CardGroup cols={2}>
+  <Card title="Thẻ ATM nội địa" icon="credit-card">
+    Tất cả thẻ ATM của ngân hàng Việt Nam có đăng ký dịch vụ Internet Banking.
+  </Card>
+  <Card title="Thẻ quốc tế" icon="globe">
+    Visa, Mastercard, JCB, American Express.
+  </Card>
+  <Card title="Chuyển khoản ngân hàng" icon="building-columns">
+    Chuyển khoản trực tiếp qua tài khoản ngân hàng theo mã QR hoặc thông tin tài khoản VNPay.
+  </Card>
+  <Card title="Ví điện tử" icon="wallet">
+    MoMo, ZaloPay, ViettelPay, ShopeePay và nhiều ví khác.
+  </Card>
+</CardGroup>
+
+---
+
+## Quy trình thanh toán
+
+<Steps>
+  <Step title="Chọn dịch vụ cần thanh toán">
+    Trên trang dịch vụ (đăng ký công bố, mã hóa, gói thành viên, v.v.), nhấn nút **"Thanh toán"**.
+  </Step>
+  <Step title="Xem xác nhận đơn hàng">
+    Kiểm tra thông tin đơn hàng (tên dịch vụ, số tiền, mã giảm giá nếu có) trước khi tiếp tục.
+  </Step>
+  <Step title="Chuyển đến VNPay">
+    Nhấn **"Xác nhận"** để được chuyển hướng đến cổng thanh toán VNPay.
+  </Step>
+  <Step title="Chọn phương thức và thanh toán">
+    Trên trang VNPay, chọn phương thức thanh toán và hoàn tất.
+  </Step>
+  <Step title="Kết quả và chuyển hướng">
+    Sau khi thanh toán, VNPay chuyển bạn về trang kết quả của DIPNet. Dịch vụ được kích hoạt tự động.
+  </Step>
+</Steps>
+
+---
+
+## Hóa đơn điện tử
+
+Mỗi giao dịch thành công đều có **hóa đơn điện tử** với đầy đủ thông tin:
+- Ngày giao dịch
+- Dịch vụ mua
+- Số tiền
+- Thông tin người mua và người bán
+
+Xem và tải hóa đơn tại `dipnet.vn/profile/receipts`.
+
+---
+
+## Lịch sử thanh toán
+
+Tất cả giao dịch thanh toán được lưu tại `dipnet.vn/profile/payment-history`. Bạn có thể xem:
+- Chi tiết từng giao dịch
+- Trạng thái thanh toán
+- Link hóa đơn
+
+---
+
+## Mã giảm giá
+
+DIPNet phát hành mã giảm giá qua các chương trình khuyến mãi. Để dùng:
+1. Nhập mã vào ô **"Mã khuyến mãi"** trên trang thanh toán
+2. Nhấn **"Áp dụng"** để kiểm tra và trừ giá trị
+
+---
+
+## Bảo mật thanh toán
+
+<Info>
+  Tất cả giao dịch được bảo mật bằng mã hóa SSL và tuân thủ chuẩn bảo mật PCI DSS. DIPNet **không lưu trữ** thông tin thẻ ngân hàng của bạn.
+</Info>
+
+---
+
+## Câu hỏi thường gặp
+
+<AccordionGroup>
+  <Accordion title="Thanh toán thành công nhưng dịch vụ chưa được kích hoạt?">
+    Đôi khi cần 2-5 phút để hệ thống xác nhận. Nếu sau 30 phút vẫn chưa cập nhật, liên hệ hỗ trợ và cung cấp **mã giao dịch VNPay** (vnp_TxnRef).
+  </Accordion>
+  <Accordion title="Tôi có thể yêu cầu hoàn tiền không?">
+    Chính sách hoàn tiền tùy theo từng loại dịch vụ. Xem [Chính sách thanh toán](https://dipnet.vn/payment-policy) để biết chi tiết.
+  </Accordion>
+  <Accordion title="Tôi có thể nhận hóa đơn VAT không?">
+    Hóa đơn điện tử tự động được cấp sau mỗi giao dịch. Để xuất hóa đơn VAT cho doanh nghiệp, vui lòng liên hệ **support@dipnet.vn** với mã giao dịch và thông tin công ty.
+  </Accordion>
+</AccordionGroup>

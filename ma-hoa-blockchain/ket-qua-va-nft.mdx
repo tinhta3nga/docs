@@ -1,0 +1,78 @@
+---
+title: "Kết quả mã hóa & NFT"
+description: "Xem thông tin NFT và tra cứu tác phẩm trên blockchain"
+---
+
+## Sau khi mã hóa thành công
+
+Khi tác phẩm được mã hóa thành công, DIPNet cập nhật các thông tin sau vào hồ sơ tác phẩm:
+
+| Thông tin | Mô tả |
+|-----------|-------|
+| **Token ID** | Mã số duy nhất của NFT trên blockchain |
+| **Contract Address** | Địa chỉ smart contract IP Manager |
+| **Transaction Hash** | Mã giao dịch blockchain (có thể tra cứu) |
+| **Token URI** | URL đến metadata NFT (lưu trên S3) |
+
+---
+
+## Metadata NFT
+
+Metadata của NFT tuân theo chuẩn NFT phổ biến và bao gồm:
+
+```json
+{
+  "name": "Tên tác phẩm",
+  "description": "Mô tả tác phẩm",
+  "image": "URL ảnh bìa",
+  "registration_number": "Số định danh",
+  "registration_date": "Ngày đăng ký",
+  "category": "Danh mục",
+  "participants": [
+    {
+      "name": "Tên tác giả",
+      "role": "Owner/Co-Owner/Author...",
+      "wallet_address": "0x..."
+    }
+  ],
+  "attributes": [...]
+}
+```
+
+---
+
+## Xem thông tin NFT
+
+Sau khi mã hóa, bạn có thể xem thông tin NFT trong:
+
+1. **Trang chi tiết tác phẩm** – Tại `dipnet.vn/work/[id]`, phần "Thông tin blockchain" hiển thị Token ID và Transaction Hash.
+
+2. **Kho IP (IP Warehouse)** – Tại `dipnet.vn/warehouse-ip`, xem toàn bộ NFT tác phẩm đã mã hóa.
+
+---
+
+## Tra cứu giao dịch trên blockchain
+
+Với **Transaction Hash**, bạn có thể tra cứu giao dịch trực tiếp trên blockchain explorer:
+
+- Sao chép Transaction Hash từ trang chi tiết tác phẩm
+- Truy cập blockchain explorer (Etherscan hoặc tương đương)
+- Dán Transaction Hash vào ô tìm kiếm để xem chi tiết giao dịch
+
+---
+
+## Chuyển nhượng NFT khi mua bán
+
+Khi tác phẩm được **mua nhượng quyền** thành công:
+
+- NFT tự động được chuyển từ ví người bán sang ví người mua
+- Smart contract thực hiện lệnh `transferFullIP` hoặc `transferPartialIP`
+- Quyền sở hữu thay đổi vĩnh viễn trên blockchain
+
+Điều này đảm bảo mỗi giao dịch mua bán được ghi nhận minh bạch và không thể phủ nhận.
+
+---
+
+<Info>
+  NFT tác phẩm DIPNet không phải để "đầu cơ" hay mua bán tự do trên các sàn NFT thông thường. NFT đại diện cho **quyền sở hữu trí tuệ hợp pháp** và được quản lý theo luật bản quyền Việt Nam.
+</Info>
