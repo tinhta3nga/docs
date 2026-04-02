@@ -30,22 +30,12 @@ description: "Hiểu về quy trình đăng ký bảo hộ bản quyền tác ph
 
 ## Luồng đăng ký công bố
 
-```mermaid
-flowchart TD
-    A[Tạo tác phẩm gốc]
-    B[Nhấn "Đăng ký công bố"<br/>Chọn gói bảo hộ (nếu có)]
-    C[Thanh toán phí qua VNPay]
-    D[Trạng thái: Đã đăng ký - chờ duyệt]
-    E[Admin xét duyệt hồ sơ<br/>(1-5 ngày làm việc)]
-    F{Kết quả}
-    G[Đã duyệt ✅]
-    H[Bị từ chối ❌]
-    I[Mã hóa blockchain / Giao dịch]
+  <img
+    src="../images/tac-pham/tacpham-9.png"
+    alt="Đăng ký tác phẩm"
+    style={{ marginTop: "12px", borderRadius: "8px" }}
+  />
 
-    A --> B --> C --> D --> E --> F
-    F --> G --> I
-    F --> H
-```
 
 ---
 
