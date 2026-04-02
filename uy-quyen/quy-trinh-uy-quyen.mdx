@@ -68,18 +68,25 @@ style={{ marginTop: "12px", borderRadius: "8px" }}
 />
 
   </Step>
-  <Step title="Xác nhận uỷ quyền">
+  <Step title="Gửi yêu cầu uỷ quyền">
     Sau khi ký, nhấn **"Xác nhận"**. Hệ thống:
-    - Gửi yêu cầu đăng ký uỷ quyền khai thác lên cho hệ thống
+    - Gửi yêu cầu uỷ quyền khai thác lên cho admin xét duyệt
     - Lưu hợp đồng vào danh sách tài liệu của bạn
+    - Trạng thái uỷ quyền chuyển sang **"Đang chờ duyệt"**
 
     <img
+      src="../images/tac-pham/tacpham-23.png"
+      alt="Đăng ký tác phẩm"
+      style={{ marginTop: "12px", borderRadius: "8px" }}
+    />
+  </Step>
+  <Step title="Chờ admin xét duyệt">
+    Admin DipNET sẽ xem xét hồ sơ uỷ quyền trong vòng **1–5 ngày làm việc**. Bạn sẽ nhận thông báo qua email khi có kết quả.
 
-src="../images/tac-pham/tacpham-23.png"
-alt="Đăng ký tác phẩm"
-style={{ marginTop: "12px", borderRadius: "8px" }}
-/>
-
+    | Kết quả | Ý nghĩa |
+    |---------|---------|
+    | ✅ **Được duyệt** | Trạng thái chuyển sang **"Đã uỷ quyền"** (`is_authorized = true`), DipNET bắt đầu khai thác tác phẩm theo phạm vi hợp đồng |
+    | ❌ **Bị từ chối** | Email thông báo kèm lý do, bạn có thể điều chỉnh và gửi lại yêu cầu |
   </Step>
 </Steps>
 
