@@ -1,6 +1,6 @@
 ---
 title: "Quy trình uỷ quyền khai thác"
-description: "Ký hợp đồng uỷ quyền số để cho phép DipNET khai thác tác phẩm thay mặt bạn"
+description: "Ký hợp đồng uỷ quyền số để cho phép DipNET khai thác tác phẩm thay mặt chủ sở hữu"
 ---
 
 ## Hai luồng uỷ quyền
@@ -9,10 +9,12 @@ DIPNet hỗ trợ hai hình thức uỷ quyền khác nhau:
 
 <CardGroup cols={2}>
   <Card title="Uỷ quyền khai thác" icon="handshake">
-    Uỷ quyền cho DipNET khai thác thương mại tác phẩm. **Không cần thanh toán phí**, chỉ cần ký hợp đồng số.
+    Uỷ quyền cho DipNET khai thác thương mại tác phẩm. **Không cần thanh toán
+    phí**, chỉ cần ký hợp đồng số.
   </Card>
   <Card title="Uỷ quyền đăng ký công bố" icon="shield-check">
-    Uỷ quyền cho DipNET thực hiện đăng ký bảo hộ bản quyền. Cần ký hợp đồng và **thanh toán phí** đăng ký.
+    Uỷ quyền cho DipNET thực hiện đăng ký bảo hộ bản quyền. Cần ký hợp đồng và
+    **thanh toán phí** đăng ký.
   </Card>
 </CardGroup>
 
@@ -21,8 +23,17 @@ DIPNet hỗ trợ hai hình thức uỷ quyền khác nhau:
 ## Quy trình uỷ quyền khai thác
 
 <Steps>
-  <Step title="Mở trang uỷ quyền">
-    Vào trang chi tiết tác phẩm và nhấn thẻ **"Uỷ quyền"**, hoặc truy cập `dipnet.vn/authorization/[productId]`.
+  <Step title="Lựa chọn đăng ký uỷ quyền khai thác">
+  <span style={{ color: "red", fontWeight: "bold" }}>Lưu ý</span>: Chỉ có thể đăng ký uỷ quyền khai thác nếu đã đăng ký công bố cho sản phẩm.
+    Truy cập trang chi tiết tác phẩm và lựa chọn **"Uỷ quyền khai thác"**.
+
+    <img
+      src="../images/tac-pham/tacpham-19.png"
+      alt="Đăng ký tác phẩm"
+      style={{ marginTop: "12px", borderRadius: "8px" }}
+    />
+
+
   </Step>
   <Step title="Chọn phạm vi khai thác">
     Xác định các quyền khai thác bạn muốn uỷ quyền cho DipNET:
@@ -41,6 +52,7 @@ DIPNet hỗ trợ hai hình thức uỷ quyền khác nhau:
     <Note>
       Chữ ký số VNPT SmartCA có giá trị pháp lý cao nhất, được khuyến nghị cho các hợp đồng quan trọng.
     </Note>
+
   </Step>
   <Step title="Xác nhận uỷ quyền">
     Sau khi ký, nhấn **"Xác nhận"**. Hệ thống:
@@ -57,6 +69,7 @@ DIPNet hỗ trợ hai hình thức uỷ quyền khác nhau:
 **VNPT SmartCA** là dịch vụ chữ ký số của VNPT, được pháp luật Việt Nam công nhận có giá trị tương đương chữ ký tay.
 
 Để sử dụng VNPT SmartCA trên DIPNet:
+
 1. Bạn cần có tài khoản VNPT SmartCA (đăng ký tại vnpt-ca.vn)
 2. Vào `dipnet.vn/authorization`, chọn **"Ký bằng VNPT SmartCA"**
 3. Xác thực và ký hợp đồng qua ứng dụng SmartCA trên điện thoại
@@ -66,6 +79,7 @@ DIPNet hỗ trợ hai hình thức uỷ quyền khác nhau:
 ## Xem hợp đồng đã ký
 
 Tất cả hợp đồng uỷ quyền đã ký lưu tại `dipnet.vn/profile/contract`. Bạn có thể:
+
 - Xem danh sách hợp đồng
 - Tải xuống bản PDF
 - Kiểm tra trạng thái hợp đồng
@@ -76,15 +90,19 @@ Tất cả hợp đồng uỷ quyền đã ký lưu tại `dipnet.vn/profile/con
 
 <AccordionGroup>
   <Accordion title="Uỷ quyền có nghĩa là tôi mất quyền sở hữu tác phẩm không?">
-    Không. Uỷ quyền khai thác **không chuyển quyền sở hữu**. Bạn vẫn là chủ sở hữu tác phẩm; DipNET chỉ được phép khai thác trong phạm vi được uỷ quyền.
+    Không. Uỷ quyền khai thác **không chuyển quyền sở hữu**. Bạn vẫn là chủ sở
+    hữu tác phẩm; DipNET chỉ được phép khai thác trong phạm vi được uỷ quyền.
   </Accordion>
   <Accordion title="Tôi có thể thu hồi uỷ quyền không?">
-    Khả năng thu hồi uỷ quyền phụ thuộc vào điều khoản hợp đồng đã ký. Liên hệ support@dipnet.vn để được tư vấn.
+    Khả năng thu hồi uỷ quyền phụ thuộc vào điều khoản hợp đồng đã ký. Liên hệ
+    support@dipnet.vn để được tư vấn.
   </Accordion>
   <Accordion title="Chữ ký số VNPT SmartCA có bắt buộc không?">
-    Không bắt buộc, nhưng được khuyến nghị vì có giá trị pháp lý cao hơn. Bạn có thể dùng chữ ký mặc định cho các uỷ quyền nội bộ.
+    Không bắt buộc, nhưng được khuyến nghị vì có giá trị pháp lý cao hơn. Bạn có
+    thể dùng chữ ký mặc định cho các uỷ quyền nội bộ.
   </Accordion>
   <Accordion title="Tác phẩm đã uỷ quyền có thể bán không?">
-    Có. Uỷ quyền khai thác và bán nhượng quyền là hai tính năng độc lập. Bạn vẫn có thể đăng bán tác phẩm trên thị trường dù đã uỷ quyền.
+    Có. Uỷ quyền khai thác và bán nhượng quyền là hai tính năng độc lập. Bạn vẫn
+    có thể đăng bán tác phẩm trên thị trường dù đã uỷ quyền.
   </Accordion>
 </AccordionGroup>
