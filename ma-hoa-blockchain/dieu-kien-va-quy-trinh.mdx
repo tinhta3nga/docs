@@ -9,7 +9,7 @@ description: "Hướng dẫn từng bước thực hiện mã hóa tác phẩm l
   - Tác phẩm đã được **duyệt đăng ký công bố** (copyright_status = approved)
   - Tác phẩm là **tác phẩm gốc** (không phải phái sinh)
   - Tác phẩm **chưa được mã hóa** hoặc **chưa có yêu cầu mã hóa đang xử lý**
-  - Tất cả người tham gia có tài khoản DIPNet đã **liên kết ví điện tử EVM**
+  - Tất cả người tham gia có tài khoản DipNET đã **liên kết ví điện tử EVM**
 </CheckList>
 
 ---
@@ -33,7 +33,7 @@ Trên trang chi tiết tác phẩm, thẻ **Mã hóa** hiển thị các trạng
   <Step title="Truy cập trang mã hóa">
     Vào trang chi tiết tác phẩm và nhấn thẻ **"Mã hóa"** (màu trắng, có thể nhấn).
 
-    Hoặc truy cập trực tiếp `dipnet.vn/encrypt/[productId]`.
+    Hoặc truy cập trực tiếp `DipNET.vn/encrypt/[productId]`.
   </Step>
   <Step title="Xem thông tin và phí">
     Trang mã hóa hiển thị:
@@ -57,7 +57,7 @@ Trên trang chi tiết tác phẩm, thẻ **Mã hóa** hiển thị các trạng
     - Đơn mã hóa được tạo, chờ admin xét duyệt
   </Step>
   <Step title="Chờ admin xét duyệt và mã hóa">
-    Admin DIPNet sẽ xem xét đơn mã hóa và thực hiện:
+    Admin DipNET sẽ xem xét đơn mã hóa và thực hiện:
     - Tạo metadata NFT từ thông tin tác phẩm
     - Upload metadata lên Amazon S3
     - Gọi smart contract tạo IP (createIP) trên blockchain Ethereum
@@ -76,7 +76,7 @@ Trên trang chi tiết tác phẩm, thẻ **Mã hóa** hiển thị các trạng
 
 ## Liên kết ví EVM
 
-Để đăng ký thông tin lên blockchain, tất cả người tham gia **có tài khoản DIPNet** cần liên kết ví EVM:
+Để đăng ký thông tin lên blockchain, tất cả người tham gia **có tài khoản DipNET** cần liên kết ví EVM:
 
 1. Vào **Hồ sơ** → **Cài đặt** (hoặc khu vực ví)
 2. Chọn **"Liên kết ví EVM"**
@@ -99,12 +99,12 @@ Trên trang chi tiết tác phẩm, thẻ **Mã hóa** hiển thị các trạng
     Sau khi thanh toán, yêu cầu mã hóa đã được tạo và không thể hủy. Bạn cần chờ kết quả xét duyệt từ admin.
   </Accordion>
   <Accordion title="Nếu người đồng sở hữu không có ví EVM thì sao?">
-    Người không có tài khoản DIPNet có thể không cần ví EVM. Nhưng tất cả người tham gia **có tài khoản DIPNet** phải liên kết ví EVM trước khi có thể thực hiện mã hóa.
+    Người không có tài khoản DipNET có thể không cần ví EVM. Nhưng tất cả người tham gia **có tài khoản DipNET** phải liên kết ví EVM trước khi có thể thực hiện mã hóa.
   </Accordion>
   <Accordion title="Sau khi mã hóa, tôi có thể thêm/xóa tác giả không?">
     Không. Thông tin tác giả trên blockchain là **bất biến** (immutable). Sau khi mã hóa, danh sách tác giả không thể thay đổi.
   </Accordion>
   <Accordion title="Mã hóa mất phí blockchain (gas fee) không?">
-    Phí gas được DIPNet thanh toán từ ví platform. Người dùng chỉ trả **phí mã hóa** trên DIPNet, không cần trả phí gas riêng.
+    Phí gas được DipNET thanh toán từ ví platform. Người dùng chỉ trả **phí mã hóa** trên DipNET, không cần trả phí gas riêng.
   </Accordion>
 </AccordionGroup>
