@@ -1,11 +1,11 @@
 ---
 title: "Giới thiệu đăng ký công bố"
-description: "Hiểu về quy trình đăng ký bảo hộ bản quyền tác phẩm trên DIPNet"
+description: "Hiểu về quy trình đăng ký bảo hộ bản quyền tác phẩm trên DipNET"
 ---
 
 ## Đăng ký công bố là gì?
 
-**Đăng ký công bố** (Copyright Registration) là quá trình nộp hồ sơ đăng ký bảo hộ bản quyền tác phẩm của bạn thông qua nền tảng DIPNet. Khi được duyệt, tác phẩm của bạn sẽ được cấp **chứng nhận bảo hộ bản quyền chính thức**.
+**Đăng ký công bố** (Copyright Registration) là quá trình nộp hồ sơ đăng ký bảo hộ bản quyền tác phẩm của bạn thông qua nền tảng DipNET. Khi được duyệt, tác phẩm của bạn sẽ được cấp **chứng nhận bảo hộ bản quyền chính thức**.
 
 ---
 
@@ -30,21 +30,21 @@ description: "Hiểu về quy trình đăng ký bảo hộ bản quyền tác ph
 
 ## Luồng đăng ký công bố
 
-```
-Tạo tác phẩm gốc
-      ↓
-Nhấn "Đăng ký công bố" → Chọn gói bảo hộ (nếu có)
-      ↓
-Thanh toán phí qua VNPay
-      ↓
-[Trạng thái: Đã đăng ký - chờ duyệt]
-      ↓
-Admin xét duyệt hồ sơ (1-5 ngày làm việc)
-      ↓
-[Kết quả: Đã duyệt ✅ hoặc Bị từ chối ❌]
-      ↓
-(Nếu được duyệt) → Mã hóa blockchain / Giao dịch
-```
+```mermaid
+flowchart TD
+    A[Tạo tác phẩm gốc]
+    B[Nhấn "Đăng ký công bố"<br/>Chọn gói bảo hộ (nếu có)]
+    C[Thanh toán phí qua VNPay]
+    D[Trạng thái: Đã đăng ký - chờ duyệt]
+    E[Admin xét duyệt hồ sơ<br/>(1-5 ngày làm việc)]
+    F{Kết quả}
+    G[Đã duyệt ✅]
+    H[Bị từ chối ❌]
+    I[Mã hóa blockchain / Giao dịch]
+
+    A --> B --> C --> D --> E --> F
+    F --> G --> I
+    F --> H
 
 ---
 
