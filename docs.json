@@ -70,6 +70,15 @@
             ]
           },
           {
+            "group": "Quét vi phạm bản quyền",
+            "pages": [
+              "quet-vi-pham/gioi-thieu-quet",
+              "quet-vi-pham/tao-quet-moi",
+              "quet-vi-pham/xem-bao-cao",
+              "quet-vi-pham/mua-them-luot-quet"
+            ]
+          },
+          {
             "group": "Mua bán & Chuyển nhượng",
             "pages": [
               "mua-ban/thi-truong-tac-pham",
@@ -88,15 +97,6 @@
               "goi-dich-vu/goi-dung-luong",
               "goi-dich-vu/goi-tu-van-phap-ly",
               "goi-dich-vu/huong-dan-thanh-toan"
-            ]
-          },
-          {
-            "group": "Quét vi phạm bản quyền",
-            "pages": [
-              "quet-vi-pham/gioi-thieu-quet",
-              "quet-vi-pham/tao-quet-moi",
-              "quet-vi-pham/xem-bao-cao",
-              "quet-vi-pham/mua-them-luot-quet"
             ]
           },
           {
