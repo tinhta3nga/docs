@@ -21,7 +21,7 @@ Trên trang chi tiết tác phẩm, thẻ **Mã hóa** hiển thị các trạng
 | Màu thẻ  | Trạng thái    | Ý nghĩa                                                      |
 | -------- | ------------- | ------------------------------------------------------------ |
 | ⚫ Xám   | Disabled      | Tác phẩm chưa được duyệt công bố. Cần đăng ký công bố trước. |
-| 🟡 Vàng  | Đang xử lý    | Đã thanh toán, đang chờ admin mã hóa.                        |
+| 🟡 Vàng  | Đang xử lý    | Đã thanh toán, đang chờ sản phẩm được mã hóa.                        |
 | 🟢 Xanh  | Đã mã hóa     | Tác phẩm đã được số hóa lên blockchain.                      |
 | ⚪ Trắng | Có thể mã hóa | Đủ điều kiện, nhấn để bắt đầu.                               |
 
@@ -73,11 +73,11 @@ Trên trang chi tiết tác phẩm, thẻ **Mã hóa** hiển thị các trạng
     Sau khi thanh toán thành công:
     - Tác phẩm chuyển sang trạng thái **"Đang mã hóa"** (thẻ vàng)
     - Bạn nhận email xác nhận
-    - Đơn mã hóa được tạo, chờ admin xét duyệt
+    - Đơn mã hóa được tạo và thực thi giao dịch blockchain
 
   </Step>
-  <Step title="Chờ admin xét duyệt và mã hóa">
-    Admin DipNET sẽ xem xét đơn mã hóa và thực hiện:
+  <Step title="Mã hóa">
+    Hệ thống blockchain nội bộ của DipNET sẽ tự động:
     - Tạo metadata NFT từ thông tin tác phẩm
     - Upload metadata lên Amazon S3
     - Gọi smart contract tạo IP (createIP) trên blockchain Ethereum
@@ -87,11 +87,11 @@ Trên trang chi tiết tác phẩm, thẻ **Mã hóa** hiển thị các trạng
 
   </Step>
   <Step title="Nhận thông báo kết quả">
-    Sau khi admin xử lý:
-    - **Được duyệt**: Tác phẩm chuyển sang "Đã mã hóa" (thẻ xanh). NFT được tạo với Token ID riêng. Bạn nhận email kèm thông tin Token ID và Transaction Hash.
+    Sau khi được mã hoá:
+    - **Được mã hoá thành công**: Tác phẩm chuyển sang "Đã mã hóa" (thẻ xanh). NFT được tạo với Token ID riêng. Bạn nhận email kèm thông tin Token ID và Transaction Hash.
 
     Thông tin về hợp đồng thông minh, dữ liệu mã hoá được thể hiện ở trong trang chi tiết sản phẩm.
-    
+
     <img
       src="/images/tac-pham/tacpham-29.png"
       alt="Đăng ký tác phẩm"
@@ -99,7 +99,6 @@ Trên trang chi tiết tác phẩm, thẻ **Mã hóa** hiển thị các trạng
     />
 
 
-    - **Bị từ chối**: Tác phẩm trở về trạng thái trước, bạn nhận email kèm lý do.
   </Step>
 </Steps>
 
@@ -124,13 +123,12 @@ Trên trang chi tiết tác phẩm, thẻ **Mã hóa** hiển thị các trạng
 ## Câu hỏi thường gặp
 
 <AccordionGroup>
-  <Accordion title="Phí mã hóa có được hoàn trả nếu bị từ chối không?">
-    Phí mã hóa **không hoàn trả** nếu đơn bị từ chối. Hãy đảm bảo đủ điều kiện
-    trước khi thanh toán.
+  <Accordion title="Phí mã hóa có được hoàn trả nếu giao dịch thát bại không?">
+    Phí mã hóa **sẽ được hoàn lại cho bạn** nếu giao dịch thất bại. Thường sẽ mất một ngày để hệ thống xử lý.
   </Accordion>
   <Accordion title="Tôi có thể hủy yêu cầu mã hóa sau khi đã thanh toán không?">
     Sau khi thanh toán, yêu cầu mã hóa đã được tạo và không thể hủy. Bạn cần chờ
-    kết quả xét duyệt từ admin.
+    kết quả mã hoá của hệ thống DipNET.
   </Accordion>
   <Accordion title="Nếu người đồng sở hữu không có ví EVM thì sao?">
     Người không có tài khoản DipNET có thể không cần ví EVM. Nhưng tất cả người
