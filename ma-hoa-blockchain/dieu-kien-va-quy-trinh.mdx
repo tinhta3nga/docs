@@ -21,7 +21,7 @@ Trên trang chi tiết tác phẩm, thẻ **Mã hóa** hiển thị các trạng
 | Màu thẻ  | Trạng thái    | Ý nghĩa                                                      |
 | -------- | ------------- | ------------------------------------------------------------ |
 | ⚫ Xám   | Disabled      | Tác phẩm chưa được duyệt công bố. Cần đăng ký công bố trước. |
-| 🟡 Vàng  | Đang xử lý    | Đã thanh toán, đang chờ sản phẩm được mã hóa.                        |
+| 🟡 Vàng  | Đang xử lý    | Đã thanh toán, đang chờ sản phẩm được mã hóa.                |
 | 🟢 Xanh  | Đã mã hóa     | Tác phẩm đã được số hóa lên blockchain.                      |
 | ⚪ Trắng | Có thể mã hóa | Đủ điều kiện, nhấn để bắt đầu.                               |
 
@@ -58,6 +58,7 @@ Trên trang chi tiết tác phẩm, thẻ **Mã hóa** hiển thị các trạng
     Trang mã hóa hiển thị:
     - Thông tin tác phẩm (tên, số định danh, danh mục)
     - **Phí mã hóa** theo danh mục tác phẩm
+
   </Step>
   <Step title="Liên kết ví EVM (nếu chưa có)">
     Nếu bạn hoặc người đồng sở hữu chưa liên kết ví EVM, hệ thống sẽ nhắc nhở. Cần liên kết ví trước khi tiếp tục.
@@ -81,9 +82,9 @@ Trên trang chi tiết tác phẩm, thẻ **Mã hóa** hiển thị các trạng
     - Tạo metadata NFT từ thông tin tác phẩm
     - Upload metadata lên Amazon S3
     - Gọi smart contract tạo IP (createIP) trên blockchain Ethereum
-    - Chờ giao dịch được đóng vào block
+    - Chờ giao dịch được mine vào block
 
-    Thời gian xét duyệt: **1–5 ngày làm việc**.
+    Thời gian ước tính: **không quá 5 phút khi bắt đầu giao dịch**.
 
   </Step>
   <Step title="Nhận thông báo kết quả">
@@ -97,7 +98,6 @@ Trên trang chi tiết tác phẩm, thẻ **Mã hóa** hiển thị các trạng
       alt="Đăng ký tác phẩm"
       style={{ marginTop: "12px", borderRadius: "8px" }}
     />
-
 
   </Step>
 </Steps>
@@ -124,7 +124,8 @@ Trên trang chi tiết tác phẩm, thẻ **Mã hóa** hiển thị các trạng
 
 <AccordionGroup>
   <Accordion title="Phí mã hóa có được hoàn trả nếu giao dịch thát bại không?">
-    Phí mã hóa **sẽ được hoàn lại cho bạn** nếu giao dịch thất bại. Thường sẽ mất một ngày để hệ thống xử lý.
+    Phí mã hóa **sẽ được hoàn lại cho bạn** nếu giao dịch thất bại. Thường sẽ
+    mất một ngày để hệ thống xử lý.
   </Accordion>
   <Accordion title="Tôi có thể hủy yêu cầu mã hóa sau khi đã thanh toán không?">
     Sau khi thanh toán, yêu cầu mã hóa đã được tạo và không thể hủy. Bạn cần chờ
