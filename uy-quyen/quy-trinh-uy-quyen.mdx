@@ -71,17 +71,32 @@ DIPNet hỗ trợ hai hình thức uỷ quyền khác nhau:
       Chữ ký số VNPT SmartCA được khuyến nghị cho giá trị pháp lý cao nhất. Sau khi ký thành công, bạn sẽ được điều hướng tới bước xác nhận.
     </Note>
   </Step>
-  <Step title="Gửi yêu cầu uỷ quyền">
-    Sau khi ký, nhấn **"Xác nhận"**. Hệ thống:
-    - Gửi yêu cầu uỷ quyền lên admin xét duyệt
-    - Lưu hợp đồng vào danh sách tài liệu của bạn
-    - Trạng thái uỷ quyền chuyển sang **"Đang chờ duyệt"**
+  <Step title="Xem thông tin và phí">
+    Sau khi ký số thành công, bạn được điều hướng tới trang hoá đơn của yêu cầu uỷ quyền.
 
-    <img
-      src="../images/tac-pham/tacpham-23.png"
-      alt="Uỷ quyền khai thác"
-      style={{ marginTop: "12px", borderRadius: "8px" }}
-    />
+    Trang hoá đơn hiển thị:
+    - **Phí uỷ quyền khai thác** theo danh mục tác phẩm
+    - Tùy chọn **Bản cứng** (Hard Copy) nếu muốn nhận hợp đồng vật lý (có phí thêm)
+    - Tùy chọn áp dụng **Mã giảm giá** (nếu có)
+
+    **Mẹo**: Hãy thường xuyên cập nhật các thông báo mới nhất từ DipNET để thu thập các mã giảm giá.
+  </Step>
+  <Step title="Thanh toán">
+    Lựa chọn **"Thanh toán"**. Hệ thống chuyển bạn đến cổng thanh toán **VNPay**.
+
+    Các phương thức thanh toán được hỗ trợ:
+    - Thẻ ATM nội địa
+    - Thẻ tín dụng/ghi nợ quốc tế (Visa, Mastercard)
+    - Chuyển khoản ngân hàng
+    - Ví điện tử (MoMo, ZaloPay, v.v.)
+  </Step>
+  <Step title="Hoàn tất thanh toán">
+    Hoàn tất thanh toán trên cổng VNPay. Sau khi thanh toán thành công:
+    - Yêu cầu uỷ quyền chuyển sang trạng thái **"Đang chờ duyệt"**
+    - Bạn nhận email xác nhận thanh toán
+    - Hệ thống tạo hồ sơ uỷ quyền để admin xét duyệt
+
+    Bạn có thể tải về hoá đơn / in hoá đơn để lưu lại giao dịch.
   </Step>
   <Step title="Chờ xét duyệt">
     Admin DipNET sẽ xem xét hồ sơ trong vòng **1–5 ngày làm việc**. Bạn sẽ nhận thông báo qua email khi có kết quả.
