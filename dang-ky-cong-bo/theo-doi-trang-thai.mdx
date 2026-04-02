@@ -37,6 +37,26 @@ DIPNet sẽ gửi email thông báo khi:
 
 ---
 
+## Số định danh tác phẩm
+
+Sau khi đơn đăng ký được **admin duyệt**, hệ thống tự động cấp **Số định danh** (Registration Number) theo định dạng:
+
+```
+[Mã tỉnh][Thế kỷ][Năm][Mã loại tài sản][Chuỗi ngẫu nhiên]
+```
+
+Ví dụ: `012502512345`
+
+- `01` – Mã tỉnh (Hà Nội)
+- `0` – Thế kỷ 21
+- `25` – Năm 2025
+- `025` – Mã loại tài sản
+- `12345` – Chuỗi ngẫu nhiên duy nhất
+
+Số định danh được hiển thị trên trang chi tiết tác phẩm và dùng để tra cứu, xác minh bản quyền.
+
+---
+
 ## Thời gian xét duyệt
 
 | Loại | Thời gian dự kiến |
