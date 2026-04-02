@@ -23,69 +23,72 @@ DIPNet hỗ trợ hai hình thức uỷ quyền khác nhau:
 ## Quy trình uỷ quyền khai thác
 
 <Steps>
-  <Step title="Lựa chọn đăng ký uỷ quyền khai thác">
-  <span style={{ color: "red", fontWeight: "bold" }}>Lưu ý</span>: Chỉ có thể đăng ký uỷ quyền khai thác nếu đã đăng ký công bố cho sản phẩm.
-    Truy cập trang chi tiết tác phẩm và lựa chọn **"Uỷ quyền khai thác"**.
+  <Step title="Mở trang chi tiết tác phẩm">
+    Truy cập `DipNET.vn/management-studio` → chọn tác phẩm cần uỷ quyền → xem trang chi tiết.
 
     <img
       src="../images/tac-pham/tacpham-19.png"
-      alt="Đăng ký tác phẩm"
+      alt="Uỷ quyền khai thác"
+      style={{ marginTop: "12px", borderRadius: "8px" }}
+    />
+  </Step>
+  <Step title="Lựa chọn Uỷ quyền khai thác">
+    Trong trang chi tiết tác phẩm, nhấn thẻ **"Uỷ quyền"** (Handshake icon).
+
+    <img
+      src="../images/tac-pham/tacpham-20.png"
+      alt="Uỷ quyền khai thác"
       style={{ marginTop: "12px", borderRadius: "8px" }}
     />
 
+    <Warning>Chỉ có thể đăng ký uỷ quyền khai thác nếu tác phẩm đã được **duyệt đăng ký công bố**.</Warning>
   </Step>
-  <Step title="Xem và ký hợp đồng số">
-    Sau khi người dùng lựa chọn Tạo hợp đồng **hợp đồng uỷ quyền dưới định dạng PDF** sẽ được tạo và yêu cầu người dùng cung cấp chữ ký số.
+  <Step title="Tạo và ký hợp đồng">
+    Chọn **"Tạo hợp đồng"**. Hệ thống tự động tạo **hợp đồng uỷ quyền khai thác** dạng PDF dựa trên thông tin tác phẩm.
 
-<img
-  src="../images/tac-pham/tacpham-20.png"
-  alt="Đăng ký tác phẩm"
-  style={{ marginTop: "12px", borderRadius: "8px" }}
-/>
-
-    Bạn có thể ký hợp đồng theo hai cách:
-    - **VNPT SmartCA** – Chữ ký số pháp lý, được công nhận bởi pháp luật Việt Nam
-    - **Chữ ký mặc định** – Chữ ký điện tử đơn giản (dành cho mục đích nội bộ)
-
-    Tiến hành lựa chọn chữ ký, sau đó chọn **tiếp tục**
     <img
+      src="../images/tac-pham/tacpham-21.png"
+      alt="Uỷ quyền khai thác"
+      style={{ marginTop: "12px", borderRadius: "8px" }}
+    />
 
-src="../images/tac-pham/tacpham-21.png"
-alt="Đăng ký tác phẩm"
-style={{ marginTop: "12px", borderRadius: "8px" }}
-/>
+    Hợp đồng được tạo thành công sẽ hiển thị và bạn chọn hình thức ký số:
+
+    | Hình thức | Mô tả |
+    |-----------|-------|
+    | **VNPT SmartCA** | Chữ ký số có giá trị pháp lý, được công nhận bởi pháp luật Việt Nam |
+    | **Chữ ký mặc định** | Chữ ký điện tử đơn giản, dùng cho mục đích nội bộ |
+
+    <img
+      src="../images/tac-pham/tacpham-22.png"
+      alt="Uỷ quyền khai thác"
+      style={{ marginTop: "12px", borderRadius: "8px" }}
+    />
+
+    Sau khi chọn hình thức, tiến hành ký hợp đồng. Với **VNPT SmartCA**, bạn xác thực và ký qua ứng dụng SmartCA trên điện thoại.
 
     <Note>
-      Chữ ký số VNPT SmartCA có giá trị pháp lý cao nhất, được khuyến nghị cho các hợp đồng quan trọng.
+      Chữ ký số VNPT SmartCA được khuyến nghị cho giá trị pháp lý cao nhất. Sau khi ký thành công, bạn sẽ được điều hướng tới bước xác nhận.
     </Note>
-
-    Sau khi đã lựa chọn xong chữ ký, người dùng có thể ký hợp đồng, để đi tới bước thanh toán.
-    <img
-
-src="../images/tac-pham/tacpham-22.png"
-alt="Đăng ký tác phẩm"
-style={{ marginTop: "12px", borderRadius: "8px" }}
-/>
-
   </Step>
   <Step title="Gửi yêu cầu uỷ quyền">
     Sau khi ký, nhấn **"Xác nhận"**. Hệ thống:
-    - Gửi yêu cầu uỷ quyền khai thác lên cho admin xét duyệt
+    - Gửi yêu cầu uỷ quyền lên admin xét duyệt
     - Lưu hợp đồng vào danh sách tài liệu của bạn
     - Trạng thái uỷ quyền chuyển sang **"Đang chờ duyệt"**
 
     <img
       src="../images/tac-pham/tacpham-23.png"
-      alt="Đăng ký tác phẩm"
+      alt="Uỷ quyền khai thác"
       style={{ marginTop: "12px", borderRadius: "8px" }}
     />
   </Step>
-  <Step title="Chờ admin xét duyệt">
-    Admin DipNET sẽ xem xét hồ sơ uỷ quyền trong vòng **1–5 ngày làm việc**. Bạn sẽ nhận thông báo qua email khi có kết quả.
+  <Step title="Chờ xét duyệt">
+    Admin DipNET sẽ xem xét hồ sơ trong vòng **1–5 ngày làm việc**. Bạn sẽ nhận thông báo qua email khi có kết quả.
 
     | Kết quả | Ý nghĩa |
     |---------|---------|
-    | ✅ **Được duyệt** | Trạng thái chuyển sang **"Đã uỷ quyền"** (`is_authorized = true`), DipNET bắt đầu khai thác tác phẩm theo phạm vi hợp đồng |
+    | ✅ **Được duyệt** | Trạng thái chuyển sang **"Đã uỷ quyền"**, DipNET bắt đầu khai thác tác phẩm theo phạm vi hợp đồng |
     | ❌ **Bị từ chối** | Email thông báo kèm lý do, bạn có thể điều chỉnh và gửi lại yêu cầu |
   </Step>
 </Steps>
