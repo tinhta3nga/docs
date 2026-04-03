@@ -25,6 +25,7 @@ description: "Hướng dẫn mua và nhận quyền sở hữu tác phẩm trên
     - Quyền lợi người mua nhận được
 
     Ngoài ra, bạn cũng có thể thêm tác phẩm đang được rao bán vào mục yêu thích
+
   </Step>
 </Steps>
 
@@ -43,22 +44,29 @@ description: "Hướng dẫn mua và nhận quyền sở hữu tác phẩm trên
       alt="Đăng ký tác phẩm"
       style={{ marginTop: "12px", borderRadius: "8px" }}
     />
-    
+
   </Step>
   <Step title="Xem lại thông tin đơn hàng">
-    Trang xác nhận tại `DipNET.vn/trading/purchase/[sellingId]` hiển thị:
+    Trang xác nhận tại thông tin đơn hàng hiển thị:
+
+    <img
+      src="/images/chuyen-nhuong/chuyennhuong-6.png"
+      alt="Đăng ký tác phẩm"
+      style={{ marginTop: "12px", borderRadius: "8px" }}
+    />
+
     - Thông tin tác phẩm
     - Giá bán
     - Phí giao dịch
     - Tổng thanh toán
-    - Quyền lợi nhận được
+    - Mã giao dịch
+
   </Step>
   <Step title="Thanh toán qua VNPay">
     Nhấn **"Thanh toán"** và hoàn tất thanh toán qua cổng VNPay. Hỗ trợ:
     - Thẻ ATM nội địa
     - Thẻ Visa/Mastercard
     - Chuyển khoản ngân hàng
-    - Ví MoMo, ZaloPay, v.v.
   </Step>
   <Step title="Xác nhận và nhận tác phẩm">
     Sau thanh toán thành công:
@@ -75,45 +83,42 @@ description: "Hướng dẫn mua và nhận quyền sở hữu tác phẩm trên
 
 Khi đã sở hữu tác phẩm, bạn có thể:
 
-| Hành động | Mô tả |
-|-----------|-------|
-| **Xem trong Kho IP** | Tác phẩm xuất hiện tại `DipNET.vn/warehouse-ip` |
-| **Uỷ quyền** | Cấp phép cho người khác sử dụng |
-| **Bán lại** | Đăng bán trên thị trường (nếu điều khoản cho phép) |
-| **Mã hóa thêm** | Nếu chưa mã hóa, có thể thực hiện mã hóa |
+| Hành động            | Mô tả                                              |
+| -------------------- | -------------------------------------------------- |
+| **Xem trong Kho IP** | Tác phẩm xuất hiện tại `DipNET.vn/warehouse-ip`    |
+| **Uỷ quyền**         | Cấp phép cho người khác sử dụng                    |
+| **Bán lại**          | Đăng bán trên thị trường (nếu điều khoản cho phép) |
+| **Mã hóa thêm**      | Nếu chưa mã hóa, có thể thực hiện mã hóa           |
 
 ---
 
 ## Xem lịch sử mua hàng
 
 Lịch sử tất cả giao dịch mua bán tại `DipNET.vn/profile/payment-history`. Mỗi giao dịch hiển thị:
+
 - Tên tác phẩm
 - Ngày giao dịch
 - Số tiền
 - Trạng thái
 - Hóa đơn điện tử
 
----
-
-## Trang thanh toán đang xử lý
-
-Sau khi thanh toán, nếu hệ thống đang xử lý, bạn sẽ thấy trang chờ tại `DipNET.vn/purchase/[paymentCode]`. Trang này tự động cập nhật khi giao dịch hoàn tất.
-
----
-
 ## Câu hỏi thường gặp
 
 <AccordionGroup>
   <Accordion title="Tôi có thể kiểm tra tính xác thực của tác phẩm trước khi mua không?">
-    Có. Mọi tác phẩm trên DipNET đều có số định danh và trạng thái bảo hộ. Tác phẩm đã mã hóa có thể tra cứu trên blockchain bằng Transaction Hash.
+    Có. Mọi tác phẩm trên DipNET đều có số định danh và trạng thái bảo hộ. Tác
+    phẩm đã mã hóa có thể tra cứu trên blockchain bằng Transaction Hash.
   </Accordion>
   <Accordion title="Giao dịch có thể hủy sau khi thanh toán không?">
-    Giao dịch đã thanh toán thành công **không thể hủy**. Hãy xem xét kỹ thông tin tác phẩm trước khi thanh toán.
+    Giao dịch đã thanh toán thành công **không thể hủy**. Hãy xem xét kỹ thông
+    tin tác phẩm trước khi thanh toán.
   </Accordion>
   <Accordion title="Tôi cần ví EVM để mua tác phẩm không?">
-    Để nhận NFT khi mua tác phẩm đã mã hóa, bạn cần liên kết ví EVM. Nếu chưa có, DipNET sẽ nhắc bạn liên kết trước khi hoàn tất giao dịch.
+    Để nhận NFT khi mua tác phẩm đã mã hóa, bạn cần liên kết ví EVM. Nếu chưa
+    có, DipNET sẽ nhắc bạn liên kết trước khi hoàn tất giao dịch.
   </Accordion>
   <Accordion title="Hóa đơn giao dịch ở đâu?">
-    Hóa đơn điện tử được tạo tự động sau mỗi giao dịch và có thể xem/tải tại `DipNET.vn/profile/receipts`.
+    Hóa đơn điện tử được tạo tự động sau mỗi giao dịch và có thể xem/tải tại
+    `DipNET.vn/profile/receipts`.
   </Accordion>
 </AccordionGroup>
